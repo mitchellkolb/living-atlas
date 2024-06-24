@@ -16,11 +16,14 @@
     src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"
     alt="Website Badge" />
 <img
+    src="https://img.shields.io/badge/React-0088CC?style=for-the-badge&logo=React&logoColor=white"
+    alt="Website Badge" />
+<img
     src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=Windows 10&logoColor=white"
     alt="Website Badge" />
 </p>
 
-This project is intended to showcase our knowledge learning about Neural Network Design by developing a
+This project is intended to showcase the Living Atlas Database and Map teams product that we produced for our 2023 WSU Capstone project. 
 
 ![project image](resources/image1.png)
 
