@@ -49,13 +49,14 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 ---
 
 # What I Learned in this Project
-- How to
-- Programming in 
+- How to plan, document, develop and work as a team to complete a common goal.
 
 
 
 # Tools Used / Development Environment
-- Python
+- React (Frontend)
+- Python (Backend)
+- PostgreSQL (Database)
 - VS Code
 - Terminal
 - Windows 10
@@ -66,8 +67,12 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 
 # Team / Contributors / Teachers
 - [Mitchell Kolb](https://github.com/mitchellkolb)
-- [name]()
-- Professor. 
+- [Joshua Long](https://github.com/joshmainac)
+- [Sierra Svetlik](https://github.com/SierraSv)
+- [Flavio Alvarez Penate](https://github.com/f-alvarezpenate)
+- [Wyatt Croucher](https://github.com/WyattCroucher3)
+- [Phearak Both Bunna](https://github.com/Phearakbothbunna)
+- Professor. Balasubramanian ‘Subu’ Kandaswamy
 
 
 
