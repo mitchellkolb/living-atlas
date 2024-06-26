@@ -79,12 +79,29 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 
 
 # How to Set Up
-This project was implemented on our local machine inside of a virtual machine using:
-- Ubuntu Version 20.04.03 found at this [link](http://lt.releases.ubuntu.com/20.04.3/).
+This project was implemented on our local machine and then deployed on Netlify when the project was launched.
 - Clone this repository 
-- Open terminal at the codebase `~.../ext2/Noah-Mitchell/`
+- Open terminal at the codebase `~.../living-atlas`
+- Make sure you have these installed
+    - Python3
+    - Node.js
+    - npm
+- Create a virtual environment
+    - `python -m venv myenv`
+    - On Windows `myenv/Scripts/activate`
+    - On macOS and Linux `source myenv/bin/activate`
+- Managing the virtual environment
+    - When you want to leave use `deactivate`
+    - Make sure to upgrade pip `python -m pip install --upgrade pip`
+- Install packages from requirements.txt before running the Living Atlas
+    - `pip install -r requirements.txt`
+- Have a postgreSQL database active either locally or through a service provider. During development we used ElephantSQL which allowed use to remotely query the database without having to manage any databases between team members.
 
-
+### To Run the Living Atlas
+- In 1st terminal navigate to the /LivingAtlas1/client folder 
+    - Use `npm start`
+- In 2nd terminal navigate to the /LivingAtlas1/backend folder
+    - Use `uvicorn main:app --reload`
 
 
 
