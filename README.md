@@ -23,7 +23,7 @@
     alt="Website Badge" />
 </p>
 
-This project is intended to showcase the Living Atlas Database and Map teams product that we produced for our 2023 WSU Capstone project. 
+This project is intended to showcase the Living Atlas Database and Map teams product that we produced for our 2023 WSU Capstone project. We produced/deployed a full stack web application that collects and displays information relating to the Columbia River Basin.
 
 ![project image](resources/image1.png)
 
@@ -115,7 +115,7 @@ Key features of Living Atlas include data collection, data management, data shar
 ## Project Details
 
 ### Introduction
-In this project, we apply 
+In this project, we deployed the Living Atlas. The Living Atlas is a web application aimed at solving the problem of scattered andinaccessible environmental data. Our goal is to provide a central location for collecting, sharing, and accessing environmental data, making it available to a wide range of stakeholders including tribal communities, academic institutions, and government agencies. The platform will allow for easy viewing by everyone but will require authentication for uploading data to ensure the validity and accuracy of the information being shared. Additionally, the platform will be able to connect to external sources, further expanding the range of environmental data available on the platform. 
 
 
 ### Literature Review
