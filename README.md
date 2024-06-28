@@ -115,15 +115,88 @@ Key features of Living Atlas include data collection, data management, data shar
 ## Project Details
 
 ### Introduction
-In this project, we deployed the Living Atlas. The Living Atlas is a web application aimed at solving the problem of scattered andinaccessible environmental data. Our goal is to provide a central location for collecting, sharing, and accessing environmental data, making it available to a wide range of stakeholders including tribal communities, academic institutions, and government agencies. The platform will allow for easy viewing by everyone but will require authentication for uploading data to ensure the validity and accuracy of the information being shared. Additionally, the platform will be able to connect to external sources, further expanding the range of environmental data available on the platform. 
+In this project, we deployed the Living Atlas. The Living Atlas is a web application aimed at solving the problem of scattered andinaccessible environmental data. Our goal is to provide a central location for collecting, sharing, and accessing environmental data, making it available to a wide range of stakeholders including tribal communities, academic institutions, and possible government agencies. The platform will allow for easy viewing by everyone but will require authentication for uploading data to ensure the validity and accuracy of the information being shared. Additionally, the platform will be able to connect to external sources, further expanding the range of environmental data available on the platform. 
 
 
-### Literature Review
+### Collaboration
 In this we drew inspiration from various sources, including video tutorials online for 
 
 
 ### Technical Plan
-The project employs a 
+The projects technical plan outlines the detailed architecture and deployment strategy for the Living Atlas project. Where we tried ensuring a robust, scalable, and user-friendly application for managing and visualizing environmental data.
+
+
+
+#### Frontend
+The frontend of the Living Atlas project is built using React, a popular JavaScript library for building user interfaces. The design focuses on creating an intuitive and user-friendly experience for interacting with environmental data.
+
+- **Technologies Used:**
+  - React: For building the dynamic user interface.
+  - Axios: For making HTTP requests to the backend APIs.
+  - React Testing Library and Jest: For testing the frontend components.
+
+- **Key Components:**
+  - **Header Component:** Displays the logo, navigation links, search bar, filtering button, and upload button.
+  - **Upload Form Component:** Allows users to upload data, including metadata such as name, email, funding, organization, title, link, description, tags, latitude, longitude, and file.
+  - **Content Area Component:** Fetches data from the backend and renders it using the Card components.
+  - **Card Component:** Displays detailed information about each data point, including interactive features like downloading files.
+
+#### Backend
+The backend of the Living Atlas project is developed using FastAPI, a modern web framework for building APIs with Python. It handles the application's data processing and serves as the middleman between the frontend and the database.
+
+- **Technologies Used:**
+  - FastAPI: For building the RESTful endpoints.
+  - SQLAlchemy: For database interaction and ORM (Object-Relational Mapping).
+  - Google Cloud API: For storing and retrieving the files.
+
+- **Key Endpoints:**
+  - **Register Account Endpoint:** Handles user registration with necessary validations.
+  - **Login Endpoint:** Authenticates users and generates JWT tokens.
+  - **Profile Cards Endpoint:** Retrieves all cards uploaded by a specific user.
+  - **Upload Card Endpoint:** Allows authenticated users to upload new data points.
+  - **Delete Card Endpoint:** Enables users to delete their uploaded data points.
+  - **Retrieve All Cards Endpoint:** Fetches the most recent data points for display.
+  - **Filter Cards by Custom Tag Endpoint:** Filters data points based on user-defined tags.
+  - **Populate Map Point Locations Endpoint:** Supplies the frontend map with the necessary geographical data.
+
+#### Database
+The database for the Living Atlas project is managed using PostgreSQL and hosted on ElephantSQL. It stores all the environmental data, user information, and metadata associated with the data points.
+
+- **Technologies Used:**
+  - PostgreSQL: For relational database management.
+  - ElephantSQL: A cloud-based PostgreSQL service for hosting the database.
+
+- **Schema Design:**
+  - **Users Table:** Stores user information, including usernames, hashed passwords, and email addresses.
+  - **Categories Table:** Manages data categories for classification purposes.
+  - **Cards Table:** Contains details about each data point, including metadata and geographical information.
+  - **Files Table:** Stores information about files uploaded with each data point.
+  - **Tags Table:** Manages custom tags associated with data points.
+  - **CardTags Table:** Links data points to their respective tags for efficient querying.
+
+#### Requirements and Deployment Plan
+- **Functional Requirements:**
+  - Data collection with a user-friendly interface.
+  - Efficient data management, including sorting, filtering, and analysis.
+  - Secure data sharing with controlled access.
+  - Integration with external data sources.
+  - Interactive map-based data visualization.
+
+- **Non-Functional Requirements:**
+  - High performance and scalability.
+  - Intuitive and accessible user interface.
+  - Robust security measures to protect user data.
+  - Compatibility with various browsers and devices.
+  - Reliable and maintainable codebase.
+
+- **Deployment Plan:**
+  - **Staging Environment:** A separate environment that replicates the production setup for testing and validation. Uses Docker for containerization and CI/CD tools like GitHub Actions for automated deployment.
+  - **Production Environment:** Deployed on cloud platforms such as Netlify for scalability and reliability. The frontend is served via a CDN (Content Delivery Network), and the backend APIs are hosted on the netlify server. PostgreSQL database is managed via ElephantSQL with regular backups and monitoring.
+
+
+
+
+
 
 
 ### Implementation Details
@@ -155,7 +228,6 @@ For the future of the database, all that will need to be done will be to manage 
 This website is currently deployed on Netlify.com and it has a generic netlify link. A goal our team could work on in the future could be to get a custom domain and pair it with this deployed version of the site.
 
 
-## References
 
 
 
