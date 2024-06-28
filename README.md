@@ -43,7 +43,10 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 - [Team / Contributors / Teachers](#team--contributors--teachers)
 - [How to Set Up](#how-to-set-up)
 - [Project Overview](#project-overview)
-- [References](#references)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
+    - [Database](#database)
+    - [Requirements and Deployment Plan](#requirements-and-deployment-plan)
 - [Acknowledgments](#acknowledgments)
 
 ---
