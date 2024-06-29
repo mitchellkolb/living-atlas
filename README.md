@@ -41,6 +41,7 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 - [What I Learned](#what-i-learned-in-this-project)
 - [Tools Used / Development Environment](#tools-used--development-environment)
 - [Team / Contributors / Teachers](#team--contributors--teachers)
+- [CEREO Team](#cereo-team)
 - [How to Set Up](#how-to-set-up)
 - [Project Overview](#project-overview)
     - [Frontend](#frontend)
@@ -82,6 +83,13 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 - [Phearak Both Bunna](https://github.com/Phearakbothbunna)
 - Professor. Balasubramanian ‘Subu’ Kandaswamy
 
+
+
+# CEREO Team
+- Dr. Jan Boll 
+- Dr. Julie Padowski
+- Dr. Hannah Haemmerli 
+- Jacqueline Richey McCabe.
 
 
 
