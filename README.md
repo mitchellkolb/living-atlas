@@ -93,7 +93,7 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 - [Flavio Alvarez Penate](https://github.com/f-alvarezpenate)
 - [Wyatt Croucher](https://github.com/WyattCroucher3)
 - [Phearak Both Bunna](https://github.com/Phearakbothbunna)
-- Professor. Balasubramanian ‘Subu’ Kandaswamy
+- [Professor. Balasubramanian ‘Subu’ Kandaswamy](https://www.subukandaswamy.com/)
 
 
 
