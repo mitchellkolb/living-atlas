@@ -115,7 +115,7 @@ This project was implemented on our local machine and then deployed on Netlify w
 
 ### To Run the Living Atlas
 - In 1st terminal navigate to the /LivingAtlas1/client folder 
-    - Use `npm start`
+    - Use `npm install` then `npm start`
 - In 2nd terminal navigate to the /LivingAtlas1/backend folder
     - Use `uvicorn main:app --reload`
 
@@ -138,10 +138,10 @@ In this project, we deployed the Living Atlas. The Living Atlas is a web applica
 The Living Atlas project was a collaborative effort involving a dedicated development team and our clients from the Center for Environmental Research, Education, and Outreach (CEREO). Our team, composed of Joshua Long, Mitchell Kolb, and Sierra Svetlik, and later the Living Atlas Map team met weekly to discuss progress, address challenges, and plan the next steps. Additionally, we held weekly meetings with our clients, including Dr. Jan Boll, Dr. Julie Padowski, Dr. Hannah Haemmerli, and ocassionally principal assistant Jacqueline Richey McCabe, to ensure that our work aligned with their expectations and requirements. These regular interactions facilitated effective communication, timely feedback, and a clear understanding of the project goals, contributing significantly to the project's success. The larger group meeting were where we displayed and demo'ed the current status of the website as it was being developed. Throughout our two semesters working on this project we also had bi-weekly meetings with our professor Subu where we went over our progress and goals as a team as well. 
 
 
-### Technical Plan
-The projects technical plan outlines the detailed architecture and deployment strategy for the Living Atlas project. Where we tried ensuring a robust, scalable, and user-friendly application for managing and visualizing environmental data.
+### Meetings
 
 
+### Technical Details
 
 #### Frontend
 The frontend of the Living Atlas project is built using React, a popular JavaScript library for building user interfaces. The design focuses on creating an intuitive and user-friendly experience for interacting with environmental data.
@@ -210,30 +210,18 @@ The database for the Living Atlas project is managed using PostgreSQL and hosted
   - **Production Environment:** Deployed on cloud platforms such as Netlify for scalability and reliability. The frontend is served via a CDN (Content Delivery Network), and the backend APIs are hosted on the netlify server. PostgreSQL database is managed via ElephantSQL with regular backups and monitoring.
 
 
-
-
-
-
-
-### Implementation Details
-
 #### Files and Structure
-- `game.py`: Contains the racing game environment and controls the car's movement.
-> [!NOTE]
-> These files were 
+- `/client`: This folder contains the all the front end code.
+- `/backend`: This folder contains the all code that is required to run the backend. Additionally you'll find test code for the using google cloud services. 
+- `/databse`: This folder contains the ER diagram and table schema for creating a postgreSQL database locally and also some test data to insert into the database to have the frontend and backend work together.
 
 
-### Implementation
-In this project
 
-#### Results and Observations
-During development,
-<p float="left">
-  <img src="resources/image1.png" alt="First Try" width="300" />
-  <img src="resources/image2.png" alt="Final Try" width="307" />
-</p>
 
-#### Future Work
+### Results and Presentation
+When the project was finished and deployed our stakeholders/clients said they were very pleased with how their website turned out. During our where the living atlas team and all the other teams showcased their own projects, the living atlas received many compliments. Both the Living Atlas Map and Database teams are very proud of the work we produced. 
+
+### Future Work
 1. **Front-End**
 In future work, we plan to enhance the functionality of Living Atlas by enabling user login, which will allow users to securely access and manage their data. We also plan to enable file handling, which will allow users to upload and download data files in a variety of formats. In addition, we will enable filtering, which will enable users to sort and search data based on specific criteria. Finally, we plan to integrate a visualization map, which will provide users with an interactive map-based view of the data.
 2. **Back-End**
