@@ -95,23 +95,30 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 
 
 # How to Set Up
-This project was implemented on our local machine and then deployed on Netlify when the project was launched.
-- Clone this repository 
-- Open terminal at the codebase `~.../living-atlas`
-- Make sure you have these installed
-    - Python3
-    - Node.js
-    - npm
-- Create a virtual environment
-    - `python -m venv myenv`
-    - On Windows `myenv/Scripts/activate`
-    - On macOS and Linux `source myenv/bin/activate`
-- Managing the virtual environment
-    - When you want to leave use `deactivate`
-    - Make sure to upgrade pip `python -m pip install --upgrade pip`
-- Install packages from requirements.txt before running the Living Atlas
-    - `pip install -r requirements.txt`
-- Have a postgreSQL database active either locally or through a service provider. During development we used ElephantSQL which allowed use to remotely query the database without having to manage any databases between team members.
+These instructions are for a local instance. Open a new terminal and check that the following libraries are installed:
+   * python3
+   * pip (used for installing required libraries to run backend)
+   * node.js (this enables npm commands)
+
+Running the Frontend:
+   1. Go into the "/client" directory
+   2. Open this directory in a terminal
+   3. Type in "npm install" to enable React and all of the node modules used.
+   4. Run the command “npm start” to initialize the front end in port 3000.
+
+Running the Backend:
+   1. Open a new terminal and navigate to the “/backend” directory.
+   2. Use “pip install -r requirements.txt” in order to install all of the requirements.
+   3. Use “uvicorn main:app --reload” to locally host the back end in port 8000 (“--reload” makes the backend restart anytime an update happens to a file; you can choose to leave this part out).
+         3.a. If the above command doesn’t work, then you can try running “python .\main.py” instead
+   4. In order to run the docs for the backend and test each individual endpoint, go to http://localhost:8000/docs in your browser.
+
+Connecting The Frontend And Local Backend:
+   1. By default, the frontend should be connected to the hosted backend on Render. This can be checked by looking into the JavaScript file named “api.js” found inside of the /client/src directory.
+   2. Each baseURL found in this file will have a comment describing where it is deployed. Comment out all of these hosted baseURL statements.
+   3. To switch to the local backend, simply uncomment “baseURL: ‘http://localhost:8000’”. 
+
+To close the application, you can go back to each terminal and do the command Ctrl+C in order to end the process and free up localhost port 3000 and 8000 (if you forget to do this its not the end of the world but it might not let you delete files in the project without restarting your pc. Also if you do "npm start" again it will now ask you to open it in port 3001 instead since 3000 is busy.)
 
 ### To Run the Living Atlas
 - In 1st terminal navigate to the /LivingAtlas1/client folder 
@@ -214,9 +221,6 @@ The database for the Living Atlas project is managed using PostgreSQL and hosted
 - `/client`: This folder contains the all the front end code.
 - `/backend`: This folder contains the all code that is required to run the backend. Additionally you'll find test code for the using google cloud services. 
 - `/databse`: This folder contains the ER diagram and table schema for creating a postgreSQL database locally and also some test data to insert into the database to have the frontend and backend work together.
-
-
-
 
 ### Results and Presentation
 When the project was finished and deployed our stakeholders/clients said they were very pleased with how their website turned out. During our where the living atlas team and all the other teams showcased their own projects, the living atlas received many compliments. Both the Living Atlas Map and Database teams are very proud of the work we produced. 
