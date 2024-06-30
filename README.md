@@ -38,17 +38,25 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 
 
 # Table of Contents
-- [What I Learned](#what-i-learned-in-this-project)
+- [What I Learned](#what-i-learned)
 - [Tools Used / Development Environment](#tools-used--development-environment)
 - [Team / Contributors / Teachers](#team--contributors--teachers)
 - [CEREO Team](#cereo-team)
 - [How to Set Up](#how-to-set-up)
 - [Project Overview](#project-overview)
-    - [Frontend](#frontend)
-    - [Backend](#backend)
-    - [Database](#database)
-    - [Requirements and Deployment Plan](#requirements-and-deployment-plan)
+    - [Introduction](#introduction)
+    - [Collaboration](#collaboration)
+    - [Meetings](#meetings)
+    - [Technical Details](#technical-details)
+        - [Frontend](#frontend)
+        - [Backend](#backend)
+        - [Database](#database)
+        - [Requirements and Deployment Plan](#requirements-and-deployment-plan)
+        - [Files and Structure](#files-and-structure)
+    - [Results and Presentation](#results-and-presentation)
+    - [Future Work](#future-work)
 - [Acknowledgments](#acknowledgments)
+
 
 ---
 
@@ -144,7 +152,7 @@ The Living Atlas project was a collaborative effort involving a dedicated develo
 
 
 ### Meetings
-
+- - NEED TO FINISH
 
 ### Technical Details
 
@@ -212,7 +220,7 @@ The database for the Living Atlas project is managed using PostgreSQL and hosted
 
 - **Deployment Plan:**
   - **Staging Environment:** A separate environment that replicates the production setup for testing and validation. Uses Docker for containerization and CI/CD tools like GitHub Actions for automated deployment.
-  - **Production Environment:** Deployed on cloud platforms such as Netlify for scalability and reliability. The frontend is served via a CDN (Content Delivery Network), and the backend APIs are hosted on the netlify server. PostgreSQL database is managed via ElephantSQL with regular backups and monitoring.
+  - **Production Environment:** Deployed on cloud platforms such as Netlify for scalability and reliability. The frontend is served via a CDN (Content Delivery Network), and the backend APIs are hosted on a Render.com server. PostgreSQL database is managed via ElephantSQL with regular backups and monitoring.
 
 
 #### Files and Structure
