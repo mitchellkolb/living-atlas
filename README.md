@@ -38,7 +38,7 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 
 
 # Table of Contents
-- [What I Learned](#what-i-learned)
+- [What I Learned](#what-i-learned-in-this-project)
 - [Tools Used / Development Environment](#tools-used--development-environment)
 - [Team / Contributors / Teachers](#team--contributors--teachers)
 - [CEREO Team](#cereo-team)
@@ -63,8 +63,8 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 # What I Learned in this Project
 - How to plan, document, develop and work as a team to complete a common goal which was to produce a functional website that is up to the clients expectations. 
 - How to create and use API's with swaggerUI
-- How to use Google Cloud API to sotre files using buckets.
-- Creating DBMS and its ER diagrams 
+- How to use Google Cloud API to store files using buckets.
+- Creating DBMS and its corresponding ER diagrams 
 - Developing a website with modern security practices like hashing, no client side logs of hidden items, and account management.
 - Writing professional documents realting to developing software.
 
@@ -77,6 +77,7 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 - VS Code
 - Terminal
 - Windows 10
+
 **Living Atlas Specific Services**
 - Frontend - [Netlify.com](https://www.netlify.com)
 - Backend - [Render.com](https://render.com)
