@@ -19,6 +19,9 @@
     src="https://img.shields.io/badge/postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"
     alt="Website Badge" />
 <img
+    src="https://img.shields.io/badge/javascript-B9A61A?style=for-the-badge&logo=javascript&logoColor=white"
+    alt="Website Badge" />
+<img
     src="https://img.shields.io/badge/React-46A4BB?style=for-the-badge&logo=React&logoColor=white"
     alt="Website Badge" />
 <img
@@ -165,7 +168,7 @@ The Living Atlas project was a collaborative effort involving a dedicated develo
 
 
 ### Meetings
-- - NEED TO FINISH
+The Living Atlas Project was developed collaboratively by two teams: the Living Atlas Database team and the Map team. Initially, the two teams operated fairly independently, holding biweekly meetings with Prof. Subu and weekly meetings with our client, the CEREO team. In the second semester, both development teams formally merged and began working from the same GitHub repository while continuing to maintain weekly meetings with the client.
 
 ### Technical Details
 
