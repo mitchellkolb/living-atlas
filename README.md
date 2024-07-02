@@ -76,12 +76,13 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 ---
 
 # What I Learned in this Project
-- How to plan, document, develop and work as a team to complete a common goal which was to produce a functional website that is up to the clients expectations. 
-- How to create and use API's with swaggerUI
+- How to plan, document, develop, and work as a team to complete a common goal, which was to produce a functional website that meets the client's expectations.
+- How to create and use APIs with Swagger UI.
 - How to use Google Cloud API to store files using buckets.
-- Creating DBMS and its corresponding ER diagrams 
-- Developing a website with modern security practices like hashing, no client side logs of hidden items, and account management.
-- Writing professional documents realting to developing software.
+- Creating DBMS and its corresponding ER diagrams.
+- Developing a website with modern security practices like hashing, no client-side logs of hidden items, and account management.
+- Writing professional documents related to developing software.
+
 
 
 
@@ -125,47 +126,45 @@ This project is intended to showcase the Living Atlas Database and Map teams pro
 # How to Set Up
 These instructions are for a local instance. Open a new terminal and check that the following libraries are installed:
    * python3
-   * pip (used for installing required libraries to run backend)
-   * node.js (this enables npm commands)
+   * pip (used for installing required libraries to run the backend)
+   * node.js (enables npm commands)
 
 **Running the Frontend:**
-   1. Go into the `/client` directory
-   2. Open this directory in a terminal
-   3. Type in `npm install` to enable React and all of the node modules used.
-   4. Run the command “npm start” to initialize the front end in port 3000.
+   1. Go into the `/client` directory.
+   2. Open this directory in a terminal.
+   3. Type `npm install` to enable React and all of the node modules used.
+   4. Run the command `npm start` to initialize the frontend on port 3000.
 
 **Running the Backend:**
 1. Open a new terminal and navigate to the `/backend` directory.
-2. Use `pip install -r requirements.txt` in order to install all of the requirements.
-3. Use `uvicorn main:app --reload` to locally host the back end in port 8000 (“--reload” makes the backend restart anytime an update happens to a file; you can choose to leave this part out).
-    - If the above command doesn’t work, then you can try running “python .\main.py” instead
-4. In order to run the docs for the backend and test each individual endpoint, go to http://localhost:8000/docs in your browser.
+2. Use `pip install -r requirements.txt` to install all of the requirements.
+3. Use `uvicorn main:app --reload` to locally host the backend on port 8000 (`--reload` makes the backend restart anytime an update happens to a file; you can choose to leave this part out).
+    - If the above command doesn’t work, try running `python .\main.py` instead.
+4. To run the docs for the backend and test each individual endpoint, go to [http://localhost:8000/docs](http://localhost:8000/docs) in your browser.
 
-**Connecting The Frontend And Local Backend:**
-   1. By default, the frontend should be connected to the hosted backend on Render. This can be checked by looking into the JavaScript file named “api.js” found inside of the /client/src directory.
-   2. Each baseURL found in this file will have a comment describing where it is deployed. Comment out all of these hosted baseURL statements.
-   3. To switch to the local backend, simply uncomment “baseURL: ‘http://localhost:8000’”. 
+**Connecting the Frontend and Local Backend:**
+   1. By default, the frontend should be connected to the hosted backend on Render. This can be checked by looking into the JavaScript file named `api.js` found inside the `/client/src` directory.
+   2. Each `baseURL` found in this file will have a comment describing where it is deployed. Comment out all of these hosted `baseURL` statements.
+   3. To switch to the local backend, simply uncomment `baseURL: 'http://localhost:8000'`.
 
-To close the application, you can go back to each terminal and do the command Ctrl+C in order to end the process and free up localhost port 3000 and 8000 (if you forget to do this its not the end of the world but it might not let you delete files in the project without restarting your pc. Also if you do `npm start` again it will now ask you to open it in port 3001 instead since 3000 is busy.)
+To close the application, go back to each terminal and use the command `Ctrl+C` to end the process and free up localhost ports 3000 and 8000. If you forget to do this, it's not the end of the world, but it might not let you delete files in the project without restarting your PC. Also, if you do `npm start` again, it will ask you to open it on port 3001 instead since port 3000 is busy.
+
 
 
 
 # Project Overview
-The Living Atlas project is a comprehensive web application designed to address the challenge of scattered and inaccessible environmental data related to the Columbia River Basin. Developed with the aim of creating a centralized repository, the platform facilitates the collection, sharing, and access of a wide variety of environmental data. The application primarily targets stakeholders such as tribal communities, academic institutions, and government agencies. Built using React for the front end and FastAPI for the back end, Living Atlas provides a user-friendly interface for data collection and a robust system for data management. The back end utilizes ElephantSQL to store all application data in the cloud, ensuring scalability and reliability. Additionally, the platform features interactive data visualization through an integrated map-based interface, allowing users to view and analyze data in a geographical context.
+The Living Atlas project is a comprehensive web application designed to address the challenge of scattered and inaccessible environmental data related to the Columbia River Basin. Developed with the aim of creating a centralized repository, the platform facilitates the collection, sharing, and access to a wide variety of environmental data. The application primarily targets stakeholders such as tribal communities, academic institutions, and government agencies. Built using React for the front end and FastAPI for the back end, Living Atlas provides a user-friendly interface for data collection and a robust system for data management. The back end utilizes ElephantSQL to store all application data in the cloud, ensuring scalability and reliability. Additionally, the platform features interactive data visualization through an integrated map-based interface, allowing users to view and analyze data in a geographical context.
 
 Key features of Living Atlas include data collection, data management, data sharing, external data connections, and data visualization. The data collection feature offers a simple interface for uploading environmental data from various sources, with verification processes to ensure accuracy. The data management system supports efficient storage, searchability, sorting, filtering, and analysis of data. The platform promotes collaboration through secure data sharing and integrates external data sources to broaden the range of available information. The interactive map-based visualization tool enhances understanding by presenting data in a spatial context. This project demonstrates a successful collaboration between multiple teams, each focusing on specific aspects such as the database and backend, or the user interface and interactive map. Together, these components create a cohesive application that aims to make environmental data accessible and useful to a wide audience.
-
 
 
 ## Project Details
 
 ### Introduction
-In this project, we deployed the Living Atlas. The Living Atlas is a web application aimed at solving the problem of scattered andinaccessible environmental data. Our goal is to provide a central location for collecting, sharing, and accessing environmental data, making it available to a wide range of stakeholders including tribal communities, academic institutions, and possible government agencies. The platform will allow for easy viewing by everyone but will require authentication for uploading data to ensure the validity and accuracy of the information being shared. Additionally, the platform will be able to connect to external sources, further expanding the range of environmental data available on the platform. 
-
+In this project, we deployed the Living Atlas. The Living Atlas is a web application aimed at solving the problem of scattered and inaccessible environmental data. Our goal is to provide a central location for collecting, sharing, and accessing environmental data, making it available to a wide range of stakeholders including tribal communities, academic institutions, and possible government agencies. The platform will allow for easy viewing by everyone but will require authentication for uploading data to ensure the validity and accuracy of the information being shared. Additionally, the platform will be able to connect to external sources, further expanding the range of environmental data available on the platform.
 
 ### Collaboration
-The Living Atlas project was a collaborative effort involving a dedicated development team and our clients from the Center for Environmental Research, Education, and Outreach (CEREO). Our team, composed of Joshua Long, Mitchell Kolb, and Sierra Svetlik, and later the Living Atlas Map team met weekly to discuss progress, address challenges, and plan the next steps. Additionally, we held weekly meetings with our clients, including Dr. Jan Boll, Dr. Julie Padowski, Dr. Hannah Haemmerli, and ocassionally principal assistant Jacqueline Richey McCabe, to ensure that our work aligned with their expectations and requirements. These regular interactions facilitated effective communication, timely feedback, and a clear understanding of the project goals, contributing significantly to the project's success. The larger group meeting were where we displayed and demo'ed the current status of the website as it was being developed. Throughout our two semesters working on this project we also had bi-weekly meetings with our professor Subu where we went over our progress and goals as a team as well. 
-
+The Living Atlas project was a collaborative effort involving a dedicated development team and our clients from the Center for Environmental Research, Education, and Outreach (CEREO). Our team, composed of Joshua Long, Mitchell Kolb, and Sierra Svetlik, and later the Living Atlas Map team met weekly to discuss progress, address challenges, and plan the next steps. Additionally, we held weekly meetings with our clients, including Dr. Jan Boll, Dr. Julie Padowski, Dr. Hannah Haemmerli, and occasionally principal assistant Jacqueline Richey McCabe, to ensure that our work aligned with their expectations and requirements. These regular interactions facilitated effective communication, timely feedback, and a clear understanding of the project goals, contributing significantly to the project's success. The larger group meetings were where we displayed and demoed the current status of the website as it was being developed. Throughout our two semesters working on this project, we also had bi-weekly meetings with our professor Subu where we went over our progress and goals as a team as well.
 
 ### Meetings
 The Living Atlas Project was developed collaboratively by two teams: the Living Atlas Database team and the Map team. Initially, the two teams operated fairly independently, holding biweekly meetings with Prof. Subu and weekly meetings with our client, the CEREO team. In the second semester, both development teams formally merged and began working from the same GitHub repository while continuing to maintain weekly meetings with the client.
@@ -236,27 +235,28 @@ The database for the Living Atlas project is managed using PostgreSQL and hosted
 
 - **Deployment Plan:**
   - **Staging Environment:** A separate environment that replicates the production setup for testing and validation. Uses Docker for containerization and CI/CD tools like GitHub Actions for automated deployment.
-  - **Production Environment:** Deployed on cloud platforms such as Netlify for scalability and reliability. The backend APIs are hosted on a Render.com server. PostgreSQL database is managed via ElephantSQL with regular backups and monitoring.
-
+  - **Production Environment:** Deployed on cloud platforms such as Netlify for scalability and reliability. The backend APIs are hosted on a Render.com server. The PostgreSQL database is managed via ElephantSQL with regular backups and monitoring.
 
 #### Files and Structure
-- `/client`: This folder contains the all the front end code.
-- `/backend`: This folder contains the all code that is required to run the backend. Additionally you'll find test code for the using google cloud services. 
-- `/databse`: This folder contains the ER diagram and table schema for creating a postgreSQL database locally and also some test data to insert into the database to have the frontend and backend work together.
+- `/client`: This folder contains all the front-end code.
+- `/backend`: This folder contains all the code required to run the backend. Additionally, you'll find test code for using Google Cloud services.
+- `/database`: This folder contains the ER diagram and table schema for creating a PostgreSQL database locally and some test data to insert into the database to have the front-end and backend work together.
 
 ### Results and Presentation
-When the project was finished and deployed our stakeholders/clients said they were very pleased with how their website turned out. During our where the living atlas team and all the other teams showcased their own projects, the living atlas received many compliments. Both the Living Atlas Map and Database teams are very proud of the work we produced. 
+When the project was finished and deployed, our stakeholders/clients said they were very pleased with how their website turned out. During our presentation, where the Living Atlas team and all the other teams showcased their own projects, the Living Atlas received many compliments. Both the Living Atlas Map and Database teams are very proud of the work we produced.
 
 ### Future Work
 1. **Front-End**
-In future work, we plan to enhance the functionality of Living Atlas by enabling user login, which will allow users to securely access and manage their data. We also plan to enable file handling, which will allow users to upload and download data files in a variety of formats. In addition, we will enable filtering, which will enable users to sort and search data based on specific criteria. Finally, we plan to integrate a visualization map, which will provide users with an interactive map-based view of the data.
-2. **Back-End**
-For the future of the back end, we would want to create more card moderation tools/endpoints. This would include the ability to edit already existing cards and have an endpoint to verify admin users and to have those users be able to delete any card. Another feature the backend would like to implement is the ability to view/download only files. Currently files are attached to cards which require a card to be made but we could add the feature of a file explorer page where all the files are listed, and the user can download any file they desire.
-3. **Database**
-For the future of the database, all that will need to be done will be to manage the tables as needed, expanding and adding new tables if it is necessary to store more information. The instance used to run the database will also need to be upgraded should a large number of people start using the app.
-4. **Misc.**
-This website is currently deployed on Netlify.com and it has a generic netlify link. A goal our team could work on in the future could be to get a custom domain and pair it with this deployed version of the site.
+In future work, we plan to enhance the functionality of Living Atlas by enabling user login, which will allow users to securely access and manage their data. We also plan to enable file handling, allowing users to upload and download data files in various formats. In addition, we will enable filtering, which will allow users to sort and search data based on specific criteria. Finally, we plan to integrate a visualization map, which will provide users with an interactive map-based view of the data.
 
+2. **Back-End**
+For the future of the backend, we would like to create more card moderation tools/endpoints. This would include the ability to edit already existing cards, have an endpoint to verify admin users, and allow those users to delete any card. Another feature the backend would like to implement is the ability to view/download only files. Currently, files are attached to cards, which require a card to be made, but we could add the feature of a file explorer page where all the files are listed, and the user can download any file they desire.
+
+3. **Database**
+For the future of the database, all that will need to be done is to manage the tables as needed, expanding and adding new tables if it is necessary to store more information. The instance used to run the database will also need to be upgraded should a large number of people start using the app.
+
+4. **Misc.**
+This website is currently deployed on Netlify.com and has a generic Netlify link. A goal our team could work on in the future is to get a custom domain and pair it with this deployed version of the site.
 
 
 
