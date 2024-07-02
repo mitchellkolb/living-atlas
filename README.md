@@ -233,7 +233,7 @@ The database for the Living Atlas project is managed using PostgreSQL and hosted
 
 - **Deployment Plan:**
   - **Staging Environment:** A separate environment that replicates the production setup for testing and validation. Uses Docker for containerization and CI/CD tools like GitHub Actions for automated deployment.
-  - **Production Environment:** Deployed on cloud platforms such as Netlify for scalability and reliability. The frontend is served via a CDN (Content Delivery Network), and the backend APIs are hosted on a Render.com server. PostgreSQL database is managed via ElephantSQL with regular backups and monitoring.
+  - **Production Environment:** Deployed on cloud platforms such as Netlify for scalability and reliability. The backend APIs are hosted on a Render.com server. PostgreSQL database is managed via ElephantSQL with regular backups and monitoring.
 
 
 #### Files and Structure
