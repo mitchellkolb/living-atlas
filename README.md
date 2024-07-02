@@ -2,13 +2,13 @@
 <h1 align="center">Living Atlas</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/mitchellkolb/living-atlas?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/mitchellkolb/living-atlas?color=0078D6">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/mitchellkolb/living-atlas?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/mitchellkolb/living-atlas?color=0078D6">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/mitchellkolb/living-atlas?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/mitchellkolb/living-atlas?color=0078D6">
 
-  <img alt="Github stars" src="https://img.shields.io/github/stars/mitchellkolb/living-atlas?color=56BEB8" />
+  <img alt="Github stars" src="https://img.shields.io/github/stars/mitchellkolb/living-atlas?color=0078D6" />
 </p>
 
 <p align="center">
@@ -16,7 +16,19 @@
     src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white"
     alt="Website Badge" />
 <img
-    src="https://img.shields.io/badge/React-0088CC?style=for-the-badge&logo=React&logoColor=white"
+    src="https://img.shields.io/badge/postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"
+    alt="Website Badge" />
+<img
+    src="https://img.shields.io/badge/React-46A4BB?style=for-the-badge&logo=React&logoColor=white"
+    alt="Website Badge" />
+<img
+    src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
+    alt="Website Badge" />
+<img
+    src="https://img.shields.io/badge/google%20cloud%20storage-7B92B4?style=for-the-badge&logo=GoogleCloudStorage&logoColor=white"
+    alt="Website Badge" />
+<img
+    src="https://img.shields.io/badge/mapbox-000000?style=for-the-badge&logo=mapbox&logoColor=white"
     alt="Website Badge" />
 <img
     src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=Windows 10&logoColor=white"
