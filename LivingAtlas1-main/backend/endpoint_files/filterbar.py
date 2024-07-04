@@ -3,7 +3,7 @@
 filterbar
     allCards
     tag list
-    all cards by tag      --ToDo: protect against sql injection
+    all cards by tag
     search bar            
 """
 
