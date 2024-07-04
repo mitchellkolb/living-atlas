@@ -67,8 +67,7 @@ This is a showcase of the Living Atlas Database and Map teams product that we ma
 - [How to Set Up](#how-to-set-up)
 - [Project Overview](#project-overview)
     - [Introduction](#introduction)
-    - [Collaboration](#collaboration)
-    - [Meetings](#meetings)
+    - [Collaboration and Meetings](#collaboration-and-meetings)
     - [Technical Details](#technical-details)
         - [Frontend](#frontend)
         - [Backend](#backend)
@@ -170,13 +169,12 @@ This project demonstrates a successful collaboration between multiple teams, eac
 ## Project Details
 
 ### Introduction
-In this project, we deployed the Living Atlas. The Living Atlas is a web application aimed at solving the problem of scattered and inaccessible environmental data. Our goal is to provide a central location for collecting, sharing, and accessing environmental data, making it available to a wide range of stakeholders including tribal communities, academic institutions, and possible government agencies. The platform will allow for easy viewing by everyone but will require authentication for uploading data to ensure the validity and accuracy of the information being shared. Additionally, the platform will be able to connect to external sources, further expanding the range of environmental data available on the platform.
+In this project, we deployed the Living Atlas. The Living Atlas is a web application aimed at solving the problem of scattered and inaccessible environmental data. Our goal is to provide a central location for collecting, sharing, and accessing environmental data, making it available to a wide range of stakeholders including tribal communities, academic institutions, and possible environmental government agencies. The platform will allow for easy viewing by everyone but will require authentication for uploading data to ensure the validity and accuracy of the information being shared. Additionally, the platform will be able to connect to external datasets, further expanding the range of environmental data available on the platform.
 
-### Collaboration
-The Living Atlas project was a collaborative effort involving a dedicated development team and our clients from the Center for Environmental Research, Education, and Outreach (CEREO). Our team, composed of Joshua Long, Mitchell Kolb, and Sierra Svetlik, and later the Living Atlas Map team met weekly to discuss progress, address challenges, and plan the next steps. Additionally, we held weekly meetings with our clients, including Dr. Jan Boll, Dr. Julie Padowski, Dr. Hannah Haemmerli, and occasionally principal assistant Jacqueline Richey McCabe, to ensure that our work aligned with their expectations and requirements. These regular interactions facilitated effective communication, timely feedback, and a clear understanding of the project goals, contributing significantly to the project's success. The larger group meetings were where we displayed and demoed the current status of the website as it was being developed. Throughout our two semesters working on this project, we also had bi-weekly meetings with our professor Subu where we went over our progress and goals as a team as well.
+### Collaboration and Meetings
+The Living Atlas project was a collaborative effort involving a dedicated development team and our clients from the Center for Environmental Research, Education, and Outreach (CEREO). Our team, composed of Joshua Long, Mitchell Kolb, and Sierra Svetlik, along with the Living Atlas Map team, met weekly to discuss progress, address challenges, and plan the next steps. We also held weekly meetings with our clients, including Dr. Jan Boll, Dr. Julie Padowski, and Dr. Hannah Haemmerli, to ensure our work aligned with their expectations and requirements. These regular interactions facilitated effective communication, timely feedback, and a clear understanding of the project goals, contributing significantly to the project's success.
 
-### Meetings
-The Living Atlas Project was developed collaboratively by two teams: the Living Atlas Database team and the Map team. Initially, the two teams operated fairly independently, holding biweekly meetings with Prof. Subu and weekly meetings with our client, the CEREO team. In the second semester, both development teams formally merged and began working from the same GitHub repository while continuing to maintain weekly meetings with the client.
+Initially, the Living Atlas Database team and the Map team operated independently, holding biweekly meetings with Prof. Subu and weekly meetings with the CEREO team. In the second semester, both development teams merged and began working from the same GitHub repository, continuing to maintain weekly meetings with the client and biweekly meetings with Prof. Subu. Throughout our two semesters working on this project, these meetings allowed us to display and demo the current status of the website, ensuring alignment and progress towards our goals.
 
 ### Technical Details
 
@@ -186,7 +184,6 @@ The frontend of the Living Atlas project is built using React, a popular JavaScr
 - **Technologies Used:**
   - React: For building the dynamic user interface.
   - Axios: For making HTTP requests to the backend APIs.
-  - React Testing Library and Jest: For testing the frontend components.
 
 - **Key Components:**
   - **Header Component:** Displays the logo, navigation links, search bar, filtering button, and upload button.
@@ -201,6 +198,7 @@ The backend of the Living Atlas project is developed using FastAPI, a modern web
   - FastAPI: For building the RESTful endpoints.
   - SQLAlchemy: For database interaction and ORM (Object-Relational Mapping).
   - Google Cloud API: For storing and retrieving the files.
+  - Psycopg2: For sending postgreSQL requests to the database 
 
 - **Key Endpoints:**
   - **Register Account Endpoint:** Handles user registration with necessary validations.
@@ -256,10 +254,10 @@ When the project was finished and deployed, our stakeholders/clients said they w
 
 ### Future Work
 1. **Front-End**
-In future work, we plan to enhance the functionality of Living Atlas by enabling user login, which will allow users to securely access and manage their data. We also plan to enable file handling, allowing users to upload and download data files in various formats. In addition, we will enable filtering, which will allow users to sort and search data based on specific criteria. Finally, we plan to integrate a visualization map, which will provide users with an interactive map-based view of the data.
+For the future, we plan to enhance the functionality of Living Atlas by enabling user submitted geological datasets that can be overlayed on the interactive map. This would allow the map to become more personalized as the site matures. We also planned to revamp the submission form for creating new cards to make the process more visually pleasing.
 
 2. **Back-End**
-For the future of the backend, we would like to create more card moderation tools/endpoints. This would include the ability to edit already existing cards, have an endpoint to verify admin users, and allow those users to delete any card. Another feature the backend would like to implement is the ability to view/download only files. Currently, files are attached to cards, which require a card to be made, but we could add the feature of a file explorer page where all the files are listed, and the user can download any file they desire.
+For the future of the backend, we would like to create more card moderation tools/endpoints. This would include the ability to edit already existing cards, have an endpoint to verify admin users, and allow those users to delete any card. Another feature the backend would like to implement is the ability to view/download only files. Currently, files are attached to cards, which require a card to be made, but we could add the feature similar to a file explorer page where all the files are listed, and the user can download any file they desire.
 
 3. **Database**
 For the future of the database, all that will need to be done is to manage the tables as needed, expanding and adding new tables if it is necessary to store more information. The instance used to run the database will also need to be upgraded should a large number of people start using the app.
