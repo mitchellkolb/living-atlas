@@ -40,7 +40,7 @@
 
 This is a showcase of the Living Atlas Database and Map teams product that we made for our 2023 WSU Capstone project. We produced/deployed a full stack web application that collects and displays information relating to the Columbia River Basin.
 
-![Poster](resources/LA-gif-repo.gif)
+![Poster](resources/LA-gif-repo3.gif)
 
 <details>
 <summary style="color:#5087dd">Watch the Full Video Demos Here</summary>
