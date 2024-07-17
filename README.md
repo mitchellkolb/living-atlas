@@ -130,25 +130,27 @@ This is a showcase of the Living Atlas Database and Map teams product that we ma
 
 
 # How to Set Up
-These instructions are for a local instance. Open a new terminal and check that the following libraries are installed:
+These instructions are for a local instance, you will need to terminal instances to run the frontend and backend. Open a new terminal and check that the following libraries are installed:
    * python3
    * pip (used for installing required libraries to run the backend)
    * node.js (enables npm commands)
 
 **Running the Frontend:**
-   1. Go into the `/client` directory.
-   2. Open this directory in a terminal.
-   3. Type `npm install` to enable React and all of the node modules used.
-   4. Run the command `npm start` to initialize the frontend on port 3000.
+   1. Go into the `/LivingAtlas1-main/client` directory.
+   2. Type `npm install` to enable React and all of the node modules used.
+   3. This github repo is currently connected to our hosting service so our frontend is setup for that. To run this locally you need to redirect the frontend to run on your localhost. You can do this by uncommenting the baseURL line of code in the `/client/src/api.js` file that matches your open port.
+   4. Run the command `npm start` to initialize the frontend on an open port like 3000.
 
 **Running the Backend:**
-1. Open a new terminal and navigate to the `/backend` directory.
+1. Open a new terminal and navigate to the `/LivingAtlas1-main/backend` directory.
 2. Use `pip install -r requirements.txt` to install all of the requirements.
 3. Use `uvicorn main:app --reload` to locally host the backend on port 8000 (`--reload` makes the backend restart anytime an update happens to a file; you can choose to leave this part out).
     - If the above command doesn’t work, try running `python .\main.py` instead.
-4. To run the docs for the backend and test each individual endpoint, go to [http://localhost:8000/docs](http://localhost:8000/docs) in your browser.
+4. To run the docs for the backend and test each individual endpoint, go to your open port link [http://localhost:8000/docs](http://localhost:8000/docs) in your browser.
 
-**Connecting the Frontend and Local Backend:**
+
+**Troublshooting Tips**
+- Connecting the Frontend and Local Backend:**
    1. By default, the frontend should be connected to the hosted backend on Render. This can be checked by looking into the JavaScript file named `api.js` found inside the `/client/src` directory.
    2. Each `baseURL` found in this file will have a comment describing where it is deployed. Comment out all of these hosted `baseURL` statements.
    3. To switch to the local backend, simply uncomment `baseURL: 'http://localhost:8000'`.
